@@ -1,0 +1,38 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: cursive;
+}
+.app-container {
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/images/game-table-bg.png");
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 8px;
+  }
+}
+
+.simple-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  margin: 10px 0;
+  height: 2em;
+  background-color: #C8FACA;
+  text-decoration: none;
+  color: #000;
+  border: 2px transparent;
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scaleX(1.1);
+  }
+}

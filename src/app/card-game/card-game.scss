@@ -1,0 +1,75 @@
+.card-game-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.game-over-container {
+  .title {
+    background: -webkit-linear-gradient(#eee600, #eea700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  color: #fff;
+  font-size: 2em;
+  width: 15em;
+  height: 5em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  a {
+    text-decoration: none;
+    background-color: #C8FACA;
+    color: #000;
+    border-radius: 0.5em;
+    padding: 0.1em 0.2em;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+.new-game-link {
+  border: 2px solid #C8FACA;
+}
+.player-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 25em;
+  height: 10em;
+  color: #fff;
+  font-size: 1.5em;
+
+  .player-cards {
+    display: flex;
+    position: relative;
+    margin-top: 1em;
+    height: 6.75em;
+  }
+}
+
+.position-0 {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.position-1 {
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+
+.position-2 {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.position-3 {
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+}

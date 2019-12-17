@@ -1,0 +1,15 @@
+.select-players {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 600px;
+  margin: 2em;
+  .title {
+    font-size: 2.87em;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#eee600, #eea700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+}

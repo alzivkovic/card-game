@@ -1,0 +1,17 @@
+.card-container {
+  z-index: 1;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  img {
+    height: 100%;
+    width: 4.375em;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-0.5em);
+  }
+  &.selected {
+    transform: translateY(-1em);
+  }
+}
